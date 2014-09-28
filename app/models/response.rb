@@ -1,9 +1,11 @@
 class Response
   include Mongoid::Document
-  include SimpleEnum::Mongoid
 
   field :name, type: String
-  as_enum :type, no: 0, maybe: 1, yes: 2
+  field :percentage, type: Integer
 
-  validates :name, :type, presence: true
+  
+  validates :name, :percentage, presence: true
+  
+  before_save ->{ self.name = self.name.squish.downcase }
 end

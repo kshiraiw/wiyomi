@@ -72,8 +72,6 @@ GEM
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     rake (10.3.2)
-    simple_enum (2.0.0)
-      activesupport (>= 4.0.0)
     sprockets (2.12.2)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -96,4 +94,3 @@ DEPENDENCIES
   mongoid (= 4.0.0)
   puma (= 2.9.1)
   rails (= 4.1.6)
-  simple_enum (= 2.0.0)
