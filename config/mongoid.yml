@@ -13,7 +13,7 @@ production:
     default:
       database: wiyomi_development
       hosts:
-        - localhost:27017
+        - ENV['MONGOHQ_URL']
       options:
   options:
     use_utc: true
