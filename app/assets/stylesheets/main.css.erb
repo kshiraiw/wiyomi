@@ -1,0 +1,403 @@
+/*
+ _____   _           _         _                        _
+|_   _| | |         | |       | |                      | |
+  | |   | |__   __ _| |_ ___  | |_ ___  _ __ ___   __ _| |_ ___   ___  ___
+  | |   | '_ \ / _` | __/ _ \ | __/ _ \| '_ ` _ \ / _` | __/ _ \ / _ \/ __|
+ _| |_  | | | | (_| | ||  __/ | || (_) | | | | | | (_| | || (_) |  __/\__ \
+ \___/  |_| |_|\__,_|\__\___|  \__\___/|_| |_| |_|\__,_|\__\___/ \___||___/
+
+Oh nice, welcome to the stylesheet of dreams.
+It has it all. Classes, ID's, comments...the whole lot:)
+Enjoy responsibly!
+@ihatetomatoes
+
+*/
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+.drop {
+	position: fixed;
+	top: 20%;
+	left: 20%;
+	z-index: 3;
+}
+
+#info {
+	position: fixed;
+	top: 20px;
+	left:20px;
+	background: #000;
+	color: #fff;
+	padding: 20px;
+	z-index: 100;
+}
+
+#scroll {
+	color: #aaa;
+	background: #fff;
+	position: fixed;
+	top: 50%;
+	left: 45%;
+	z-index: 50;
+	text-align: center;
+	width: 6%;
+	height: 8%;
+	border-radius: 50%;
+	font-weight: bold;
+	line-height: 60px;
+	font-size: 3em;
+	box-shadow: 0px 0px 3px 2px #aaa;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-iteration-count: infinite;
+}
+
+#cloud2 {
+	top: 90%;
+	left: 80%;
+}
+
+#cloud3 {
+	top: 45%;
+	left: 45%;
+
+}
+
+#cloud1 img, #cloud2 img {
+	height: auto;
+	width: 40%;
+}
+
+#cloud3 img {
+	height: auto;
+	width: 30%;
+}
+
+#slides-container {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+#slides{
+	width: 200%;
+	height: 200%;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.slide {
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 50%;
+	height: 50%;
+	z-index: 0;
+}
+
+#slide-1 {
+	background: url("<%= asset_path 'sf.png' %>") no-repeat center center;
+	background-size: cover;
+}
+
+#slide-2 {
+	background: url("<%= asset_path 'skyBackground.png' %>") no-repeat center center;
+	background-size: cover;
+	-ms-transform: translate(100%,0%); /* IE 9 */
+  -webkit-transform: translate(100%,0%); /* Chrome, Safari, Opera */
+  transform: translate(100%,0%);
+ }
+
+
+#slide-3 {
+	background: url("<%= asset_path 'background.jpg' %>") no-repeat center center;
+	background-size: cover;
+	-ms-transform: translate(200%, 0); /* IE 9 */
+  -webkit-transform: translate(200%, 0); /* Chrome, Safari, Opera */
+  transform: translate(200%, 0);
+ }
+
+#plane {
+	position: fixed;
+	width: 70%;
+	left: 50%;
+	top: 5%;
+	margin-left: -50%;
+	text-align: center;
+	font-size: 150%;
+	z-index: 100;
+	.transform-origin(50%, 50%);
+}
+
+#post {
+	position: fixed;
+	left: 70%;
+	width: 100%;
+	height: 100%;
+}
+
+#post img {
+	height: 25%;
+	width: auto;
+}
+
+#couple {
+	position: fixed;
+	left: 50%;
+	width: 100%;
+	height: 100%;
+}
+
+#couple img {
+	height: 15%;
+	width: auto;
+}
+
+#announcement {
+	background: lightyellow;
+	color: #f93;
+	width: 60%;
+	border-radius: 10px;
+	padding: 10px;
+	z-index: 100;
+	position: fixed;
+	left: 20%;
+	top: 20%;
+	text-align: center;
+	box-shadow: 0 0 4px 5px #ccc;
+}
+
+#announcement p:last-child {
+	color: slateblue;
+}
+
+#guests {
+	position: fixed;
+	left: 10%;
+	height: 100%;
+	width: 100%;
+}
+
+#guests img {
+	height: 15%;
+	width: auto;
+}
+
+h1{
+	text-shadow: 3px 3px 2px rgba(214, 172, 181, .5);
+	color: navy;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+/*
+	Ok so you have made it this far, that means you are very keen to on my code.
+	Anyway I don't really mind it. This is a great way to learn so you actually doing the right thing:)
+	Follow me @ihatetomatoes
+*/

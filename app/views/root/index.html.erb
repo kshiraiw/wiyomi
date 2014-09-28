@@ -1,0 +1,94 @@
+<div id="page-content">
+  <div id="plane"
+    data-0="opacity: 1;"
+    data-50p="transform: scale(.25) rotate(0deg); left: 25%;"
+    data-100p="left: 50%;"
+    data-250p="transform: scale(.25) rotate(720deg);"
+    data-290p="opacity: 0">
+    <img src="<%= asset_path 'plane.png' %>">
+  </div>
+
+    <div id="cloud1" class="drop"
+      data-150p="opacity: 0; top: 0%"
+      data-250p="opacity: 1; top: 45%"
+      data-300p="opacity: 0;">
+      <img src="<%= asset_path 'cloud.png' %>">
+    </div>
+
+    <div id="cloud2" class="drop"
+      data-0="top:70%;"
+      data-150p="opacity: 0; top: 60%;"
+      data-175p="opacity: 1; top: 10%"
+      data-215p="opacity: 0;">
+      <img src="<%= asset_path 'cloud.png' %>">
+    </div>
+
+    <div id="cloud3" class="drop"
+      data-150p="opacity: 0; top: 10%"
+      data-200p="opacity: 1; top: 60%"
+      data-250p="opacity: 0;">
+      <img src="<%= asset_path 'cloud.png' %>">
+    </div>
+
+    <div id="scroll" class="animated bounce"
+      data-0="opacity:1"
+      data-40p= "opacity: 0">
+      <span>↓</span>
+    </div>
+  <div id="slides-container">
+
+    <div id="slides"
+      data-0="transform: translate(0%,0%)"
+      data-150p="transform: translate(-50%,0%)"
+      data-200p=""
+      data-350p="transform: translate(-100%,0%)"
+      data-450p="">
+    <div id="slide-1" class="slide">
+    </div>
+      <div id="slide-2" class="slide">
+        </div>
+      <div id="slide-3" class="slide">
+    </div>
+    </div>
+
+    <div id="post"
+      data-355p="top: -30%;"
+      data-365p="top: 75%; display: block">
+      <img src="<%= asset_path 'post.png' %>">
+    </div>
+
+    <div id="couple"
+      data-370p="transform[bounce]: translateY(-20%);"
+      data-375p="transform[bounce]: translateY(80%)"
+      data-385p="transform[bounce]: translateY(70%)"
+      data-390p="transform[bounce]: translateY(80%)">
+        <img src="<%= asset_path 'couple.png' %>">
+    </div>
+
+    <div id="guests"
+      data-395p="transform[bounce]: translateY(-20%);"
+      data-400p="transform[bounce]: translateY(80%)"
+      data-410p="transform[bounce]: translateY(70%)"
+      data-415p="transform[bounce]: translateY(80%)"
+    >
+      <img src="<%= asset_path 'guests.png' %>">
+    </div>
+
+    <div id="announcement"
+      data-390p="opacity: 0;"
+      data-410p="opacity: 1"
+    >
+      <h1>Come and Join Us in Celebrating Our Marriage!</h1>
+      <p>April 8 - April 12, 2015</p>
+      <p>Lahaina, HI</p>
+      <p>**More Information to Follow**</p>
+    </div>
+
+
+   </div>
+<div class="helper"></div>
+
+</div>
+<script type="text/javascript">
+  var s = skrollr.init();
+</script>
